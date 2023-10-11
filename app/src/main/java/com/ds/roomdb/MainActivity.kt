@@ -11,13 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.ds.roomdb.ui.theme.RoomDBTheme
+import com.ds.roomdb.ui.view.MainViewActivity
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             RoomDBTheme {
-
+            MainViewActivity()
             }
         }
     }
